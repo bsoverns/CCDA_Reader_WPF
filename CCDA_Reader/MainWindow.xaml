@@ -1,0 +1,15 @@
+﻿<Window x:Class="CCDA_Reader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="450" Width="988">
+    <DockPanel LastChildFill="True">
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="10">
+            <Button Content="Load CCDA" Width="100" Height="30" Click="Button_Click"/>
+            <TextBox Name="ccdaFilePathTextBox" Width="300" Margin="10,0,0,0" ToolTip="Enter CCDA file path here" Text="Past Full CCDA Path here" />
+            <Button Content="Select CCDA" Width="100" Margin="10,0,0,0" Click="SelectCCDA_Click"/>
+            <TextBox Name="xsltFilePathTextBox" Width="300" Margin="10,0,0,0" ToolTip="Enter XSLT file path here" Text="Past Full Styleshee Path here"/>
+            <Button Content="Select XSLT" Width="100" Margin="10,0,0,0" Click="SelectXSLT_Click"/>
+        </StackPanel>
+        <WebBrowser Name="webBrowser"/>
+    </DockPanel>
+</Window>
